@@ -2,10 +2,10 @@
 
 AssetTrueValue é um sistema Java desenvolvido para calcular o valor justo de ativos imobilizados, utilizando boas práticas de Clean Code, princípios SOLID e padrões de projeto GoF (Strategy, Factory, Adapter, Observer).
 
-## 🧩 Objetivo
+##  Objetivo
 Oferecer uma solução confiável e extensível para empresas que precisam reavaliar ativos patrimoniais segundo critérios contábeis e de mercado.
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - Java 8+
 - Apache NetBeans (Java with Ant)
 - MySQL
