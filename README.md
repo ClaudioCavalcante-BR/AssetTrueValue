@@ -13,7 +13,7 @@ Oferecer uma solução confiável e extensível para empresas que precisam reava
 - Padrões GoF
 - Princípios SOLID
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 - `controller/`: coordena chamadas entre view, service e dao
 - `model/`: define entidades como `Asset` e `User`
 - `dao/`: camada de persistência (SQL)
@@ -23,7 +23,7 @@ Oferecer uma solução confiável e extensível para empresas que precisam reava
 - `observer/`: gerenciamento de eventos e notificações
 - `view/`: interface gráfica Swing (caso implementada)
 
-## 🛠️ Como Executar
+##  Como Executar
 1. Clone o repositório:
    ```bash
    git clone https://github.com/ClaudioCavalcante-BR/AssetTrueValue.git
@@ -32,7 +32,7 @@ Oferecer uma solução confiável e extensível para empresas que precisam reava
 3. Compile e execute a classe `AssetController`
 4. (Opcional) Configure a conexão com o banco de dados MySQL via `ConnectionFactory`
 
-## 👨‍💻 Autor
+## Autor
 Claudio Cavalcante de Almeida
 
 ---
