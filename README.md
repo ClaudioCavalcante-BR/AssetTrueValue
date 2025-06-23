@@ -32,6 +32,11 @@ Oferecer uma solução confiável e extensível para empresas que precisam reava
 3. Compile e execute a classe `AssetController`
 4. (Opcional) Configure a conexão com o banco de dados MySQL via `ConnectionFactory`
 
+## Este projeto está disponível sob **duas licenças**:
+
+- [MIT](./licencas/LICENSE_MIT): Licença permissiva, que permite uso, modificação e redistribuição, inclusive para fins comerciais, sem a obrigação de tornar o código derivado open source.
+- [GPLv3](./licencas/LICENSE_GPLv3): Licença copyleft, que exige que qualquer modificação e redistribuição também estejam sob GPLv3, mantendo o código aberto.
+
 ## Autor
 Claudio Cavalcante de Almeida
 
