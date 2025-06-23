@@ -10,10 +10,12 @@ Oferecer uma solução confiável e extensível para empresas que precisam reava
 - Apache NetBeans (Java with Ant)
 - MySQL
 - Arquitetura em camadas (MVC)
+- Clean Code
 - Padrões GoF
 - Princípios SOLID
 
 ## Estrutura do Projeto
+-- SRC
 - `controller/`: coordena chamadas entre view, service e dao
 - `model/`: define entidades como `Asset` e `User`
 - `dao/`: camada de persistência (SQL)
