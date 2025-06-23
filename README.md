@@ -15,15 +15,23 @@ Oferecer uma solução confiável e extensível para empresas que precisam reava
 - Princípios SOLID
 
 ## Estrutura do Projeto
+
 -- SRC
-- `controller/`: coordena chamadas entre view, service e dao
-- `model/`: define entidades como `Asset` e `User`
-- `dao/`: camada de persistência (SQL)
-- `service/`: lógica de negócio, como cálculo do valor justo
-- `strategy/`: estratégias de depreciação
-- `adapter/`: integração com fontes externas
-- `observer/`: gerenciamento de eventos e notificações
-- `view/`: interface gráfica Swing (caso implementada)
+- `controller/`: coordena chamadas entre view, service e dao;
+- `model/`: define entidades como `Asset` e `User`;
+- `dao/`: camada de persistência (SQL);
+- `service/`: lógica de negócio, como cálculo do valor justo;
+- `strategy/`: estratégias de depreciação;
+- `adapter/`: integração com fontes externas;
+- `observer/`: gerenciamento de eventos e notificações;
+- `view/`: interface gráfica Swing (caso implementada);
+- `factory/`: instância da estratégia de depreciação com base em um tipo informado;
+- `util/`: funções auxiliares para validação e formatação de dados;
+- `main/`: classe principal de inicialização da aplicação;
+- `resourses/`: criado para a manutenção e evolução do sistema;
+  
+-- Test Packages
+- `test/`: Teste Junit 5 implementado para garantir que as estratégias de depreciação estejam funcionando corretamente;
 
 ##  Como Executar
 1. Clone o repositório:
