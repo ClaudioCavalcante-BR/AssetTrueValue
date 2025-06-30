@@ -20,6 +20,7 @@ Oferecer uma solução confiável e extensível para empresas que precisam reava
 - `controller/`: coordena chamadas entre view, service e dao;
 - `model/`: define entidades como `Asset` e `User`;
 - `dao/`: camada de persistência (SQL);
+- `dto/`: transporte de dados e ajuda a encapsular o que seria um excesso de parâmetros;
 - `service/`: lógica de negócio, como cálculo do valor justo;
 - `strategy/`: estratégias de depreciação;
 - `adapter/`: integração com fontes externas;
