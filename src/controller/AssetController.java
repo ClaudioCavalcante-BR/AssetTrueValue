@@ -3,6 +3,7 @@ package controller;
 
 import adapter.ExternalMarketPriceAdapter;
 import dao.AssetDAO;
+import dto.AssetDTO;
 import model.Asset;
 import observer.AssetEventManager;
 import observer.LoggerObserver;
@@ -29,11 +30,14 @@ public class AssetController {
         eventManager.addObserver(new AuditorObserver());
     }
 
-    public void save(String name, double accountingValue, int usefulLife, String condition,
-                     String location, String acquisitionDate, String assetCode) {
+    public void save(AssetDTO dto) {
+        Asset asset = new Asset(
+        dto.name, dto.accountingValue, dto.usefulLife,
+        dto.condition, dto.location, dto.acquisitionDate, dto.assetCode
+    );
 
-        Asset asset = new Asset(name, accountingValue, usefulLife, condition, location, acquisitionDate, assetCode);
-        double fairValue = fairValueService.calculateFairValue(asset).doubleValue();
+    double fairValue = fairValueService.calculateFairValue(asset).doubleValue();
+    System.out.println("Fair value calculated: " + fairValue);
 
         System.out.println("Fair value calculated: " + fairValue);
 
@@ -41,4 +45,6 @@ public class AssetController {
 
         eventManager.notifyObservers(asset); // Notifica os observers registrados
     }
+    
+    
 }
