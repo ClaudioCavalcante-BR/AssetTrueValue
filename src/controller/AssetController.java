@@ -31,15 +31,12 @@ public class AssetController {
     }
 
     public void save(AssetDTO dto) {
-        Asset asset = new Asset(
-        dto.name, dto.accountingValue, dto.usefulLife,
-        dto.condition, dto.location, dto.acquisitionDate, dto.assetCode
-    );
+        Asset asset = new Asset(dto.name, dto.accountingValue, dto.usefulLife,dto.condition, dto.location, dto.acquisitionDate, dto.assetCode);
 
-    double fairValue = fairValueService.calculateFairValue(asset).doubleValue();
-    System.out.println("Fair value calculated: " + fairValue);
-
+        double fairValue = fairValueService.calculateFairValue(asset).doubleValue();
         System.out.println("Fair value calculated: " + fairValue);
+
+        
 
         dao.save(asset); // Persiste o ativo
 
